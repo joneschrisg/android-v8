@@ -7007,6 +7007,8 @@ int Dictionary<StringDictionaryShape, String*>::NumberOfEnumElements();
 template
 int HashTable<NumberDictionaryShape, uint32_t>::FindEntry(uint32_t);
 
+template
+int HashTable<StringDictionaryShape, String*>::FindEntry(String*);
 
 // Collates undefined and unexisting elements below limit from position
 // zero of the elements. The object stays in Dictionary mode.
